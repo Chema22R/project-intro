@@ -3,6 +3,7 @@
 export function init() {
     document.body.classList.add("noScroll");
 
+    document.getElementById("projectIntroContainer").style.display = "flex";
     document.getElementById("projectIntroContent").style.maxWidth = document.getElementById("projectIntroImg").offsetWidth + "px";
     document.getElementById("projectIntroText").style.display = "unset";
     document.getElementById("projectIntroText").scrollTop = 0;

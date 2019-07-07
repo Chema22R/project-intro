@@ -1,7 +1,7 @@
 body.noScroll {overflow: hidden !important;}
 
 #projectIntroContainer {
-    display: flex;
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
