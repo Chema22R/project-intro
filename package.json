@@ -2,7 +2,7 @@
   "name": "project-intro",
   "version": "2.0.1",
   "description": "Simple UI modal to introduce a project",
-  "main": "dist/bundle.js",
+  "main": "dist/project-intro.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
