@@ -1,7 +1,10 @@
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chema22R/project-intro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chema22R/project-intro/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Chema22R/project-intro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chema22R/project-intro/context:javascript)
+
 # Project Intro
 Simple UI modal to introduce a project
 
-Check out a real example of the application from [here](http://chema22r.duckdns.org/3dpreviewer).
+Check out a real example of the application from [here](https://printersdiscovery.chema22r.com/).
 
 ## Setup and Run
 1. Download the source code
