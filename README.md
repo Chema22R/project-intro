@@ -14,7 +14,7 @@ Check out a real example of the application from [here](https://printersdiscover
 2. Install the node modules executing `npm i`
 3. Execute the command `npm run build` to build the application
 
-* If you want to run an example of the module, use the command `npm start` instead of the one specified in step 3
+* To run an example of the module, use the command `npm start` instead of the one specified in step 3
 
 ## Code to run the module
 1. HTML code:
@@ -42,7 +42,7 @@ Check out a real example of the application from [here](https://printersdiscover
     projectIntro.init();
     ```
 
-* If you need to implement the module in a non-NPM environment, you must import each project file individually, as in the example provided in `/development/index.js`. Yo can use the following code instead of the one specified in step 2, replacing the routes with the correct ones:
+* To implement the module in a non-NPM environment, each project file must be imported individually, as in the example provided in `/development/index.js`. The following code can be used instead of the one specified in step 2, replacing the routes with the correct ones:
     ```js
     import "./projectIntro.css";
     import * as projectIntro from "./projectIntro";
