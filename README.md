@@ -5,7 +5,7 @@
 [![MIT License](https://camo.githubusercontent.com/d59450139b6d354f15a2252a47b457bb2cc43828/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f6c2f7365727665726c6573732e737667)](LICENSE)
 
 # Project Intro
-Simple UI modal to introduce a project
+Simple UI modal to introduce a project.
 
 Check out a real example of the application from [here](https://printersdiscovery.chema22r.com/).
 
@@ -13,6 +13,8 @@ Check out a real example of the application from [here](https://printersdiscover
 1. Download the source code
 2. Install the node modules executing `npm i`
 3. Execute the command `npm run build` to build the application
+
+* If you want to run an example of the module, use the command `npm start` instead of the one specified in step 3
 
 ## Code to run the module
 1. HTML code:
@@ -36,6 +38,15 @@ Check out a real example of the application from [here](https://printersdiscover
 2. JS code:
     ```js
     import * as projectIntro from "project-intro";
+    window.projectIntro = projectIntro;
+    projectIntro.init();
+    ```
+
+* If you need to implement the module in a non-NPM environment, you must import each project file individually, as in the example provided in `/development/index.js`. Yo can use the following code instead of the one specified in step 2, replacing the routes with the correct ones:
+    ```js
+    import "./projectIntro.css";
+    import * as projectIntro from "./projectIntro";
+
     window.projectIntro = projectIntro;
     projectIntro.init();
     ```
