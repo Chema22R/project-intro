@@ -1,5 +1,7 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Chema22R/project-intro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chema22R/project-intro/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Chema22R/project-intro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chema22R/project-intro/context:javascript)
+[![dependencies Status](https://david-dm.org/chema22r/project-intro/status.svg)](https://david-dm.org/chema22r/project-intro)
+[![devDependencies Status](https://david-dm.org/chema22r/project-intro/dev-status.svg)](https://david-dm.org/chema22r/project-intro?type=dev)
 
 # Project Intro
 Simple UI modal to introduce a project
