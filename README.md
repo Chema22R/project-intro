@@ -1,12 +1,20 @@
-# Project Intro
-Simple UI modal to introduce a project
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chema22R/project-intro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chema22R/project-intro/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Chema22R/project-intro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chema22R/project-intro/context:javascript)
+[![dependencies Status](https://david-dm.org/chema22r/project-intro/status.svg)](https://david-dm.org/chema22r/project-intro)
+[![devDependencies Status](https://david-dm.org/chema22r/project-intro/dev-status.svg)](https://david-dm.org/chema22r/project-intro?type=dev)
+[![MIT License](https://camo.githubusercontent.com/d59450139b6d354f15a2252a47b457bb2cc43828/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f6c2f7365727665726c6573732e737667)](LICENSE)
 
-Check out a real example of the application from [here](http://chema22r.duckdns.org/3dpreviewer).
+# Project Intro
+Simple UI modal to introduce a project.
+
+Check out a real example of the application from [here](https://printersdiscovery.chema22r.com/).
 
 ## Setup and Run
 1. Download the source code
 2. Install the node modules executing `npm i`
 3. Execute the command `npm run build` to build the application
+
+* To run an example of the module, use the command `npm start` instead of the one specified in step 3
 
 ## Code to run the module
 1. HTML code:
@@ -34,11 +42,23 @@ Check out a real example of the application from [here](http://chema22r.duckdns.
     projectIntro.init();
     ```
 
+* To implement the module in a non-NPM environment, each project file must be imported individually, as in the example provided in `/development/index.js`. The following code can be used instead of the one specified in step 2, replacing the routes with the correct ones:
+    ```js
+    import "./projectIntro.css";
+    import * as projectIntro from "./projectIntro";
+
+    window.projectIntro = projectIntro;
+    projectIntro.init();
+    ```
+
 ## Directories Structure
 ```
+|- /development
+    |- example.html
+    |- index.js
 |- /dist
-    |- bundle.js
-    |- bundle.js.map
+    |- project-intro.js
+    |- project-intro.js.map
 |- /src
     |- index.js
     |- projectIntro.css
@@ -47,5 +67,8 @@ Check out a real example of the application from [here](http://chema22r.duckdns.
 |- LICENSE
 |- package.json
 |- README.md
+|- _config.yml
 |- webpack.config.js
+|- webpack.dev.js
+|- webpack.prod.js
 ```

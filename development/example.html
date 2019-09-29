@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Example</title>
+        <meta charset="UTF-8"/>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            button {
+                position: absolute;
+                height: 30px;
+                width: 80px;
+                margin: 10px;
+                cursor: pointer;
+            }
+        </style>
+	</head>
+	<body>
+        <button onclick="projectIntro.fadeIn()">Fade In</button>
+
+        <div id="projectIntroContainer">
+            <div id="projectIntroBack" onclick="projectIntro.fadeOut()"></div>
+            <div id="projectIntroContent">
+                <img id="projectIntroImg" src="https://i.postimg.cc/ZY6Jbk92/memoriizu.png" alt="Project Introduction Image">
+                <p id="projectIntroText">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <span id="projectIntroExit" onclick="projectIntro.fadeOut()">&times;</span>
+            </div>
+        </div>
+	</body>
+</html>
