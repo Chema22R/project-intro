@@ -54,10 +54,11 @@ Check out a real example of the application from [here](https://printersdiscover
 ## Directories Structure
 ```
 |- /development
-    |- ...
+    |- example.html
+    |- index.js
 |- /dist
-    |- bundle.js
-    |- bundle.js.map
+    |- project-intro.js
+    |- project-intro.js.map
 |- /src
     |- index.js
     |- projectIntro.css
@@ -66,5 +67,8 @@ Check out a real example of the application from [here](https://printersdiscover
 |- LICENSE
 |- package.json
 |- README.md
+|- _config.yml
 |- webpack.config.js
+|- webpack.dev.js
+|- webpack.prod.js
 ```
