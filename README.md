@@ -41,6 +41,8 @@ Check out a real example of the application from [here](https://printersdiscover
 
 ## Directories Structure
 ```
+|- /development
+    |- ...
 |- /dist
     |- bundle.js
     |- bundle.js.map

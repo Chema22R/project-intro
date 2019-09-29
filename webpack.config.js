@@ -1,12 +1,6 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-    mode: "production",
-    devtool: "source-map",
-    entry: {
-        index: "./src/index.js"
-    },
     output: {
         filename: "project-intro.js",
         path: path.resolve(__dirname, "dist")
@@ -21,8 +15,5 @@ module.exports = {
                 ]
             }
         ]
-    },
-    plugins: [
-        new CleanWebpackPlugin()
-    ]
+    }
 };
