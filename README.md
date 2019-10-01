@@ -7,7 +7,7 @@
 # Project Intro
 Simple UI modal to introduce a project.
 
-Check out a real example of the application from [here](https://printersdiscovery.chema22r.com/).
+Check out a live demo [here](https://printersdiscovery.chema22r.com/).
 
 ## Setup and Run
 1. Download the source code

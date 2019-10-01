@@ -1,6 +1,6 @@
 body.noScroll {overflow: hidden !important;}
 
-#projectIntroContainer {
+.projectIntroContainer {
     display: none;
     position: fixed;
     width: 100%;
@@ -21,7 +21,7 @@ body.noScroll {overflow: hidden !important;}
     -webkit-transition: opacity .5s;
 }
 
-#projectIntroBack {
+.projectIntroBack {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -30,7 +30,7 @@ body.noScroll {overflow: hidden !important;}
     opacity: 0.4;
 }
 
-#projectIntroContent {
+.projectIntroContent {
     display: flex;
     max-height: 350px;
     height: 100%;
@@ -49,7 +49,7 @@ body.noScroll {overflow: hidden !important;}
     -webkit-transition: max-width 1.5s;
 }
 
-#projectIntroImg {
+.projectIntroContent > img {
     max-width: 300px;
     height: inherit;
 
@@ -58,7 +58,7 @@ body.noScroll {overflow: hidden !important;}
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
 }
 
-#projectIntroText {
+.projectIntroContent > p {
     display: none;
     max-width: 600px;
 
@@ -77,13 +77,9 @@ body.noScroll {overflow: hidden !important;}
     color: #444;
 }
 
-#projectIntroText br {margin-bottom: 5px;}
+.projectIntroContent > p br {margin-bottom: 5px;}
 
-@media screen and (max-width: 660px) {
-    #projectIntroImg {display: none;}
-}
-
-#projectIntroExit {
+.projectIntroContent > span {
     width: 16px;
     height: 16px;
 
@@ -96,4 +92,9 @@ body.noScroll {overflow: hidden !important;}
     cursor: pointer;
 }
 
-#projectIntroExit:hover {color: #e00;}
+.projectIntroContent > span:hover {color: #e00;}
+
+
+@media screen and (max-width: 660px) {
+    .projectIntroContent > img {display: none;}
+}
