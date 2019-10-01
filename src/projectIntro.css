@@ -31,6 +31,7 @@ body.noScroll {overflow: hidden !important;}
 }
 
 .projectIntroContent {
+    position: absolute;
     display: flex;
     max-height: 350px;
     height: 100%;
@@ -90,10 +91,10 @@ body.noScroll {overflow: hidden !important;}
 }
 
 .projectIntroContent > span {
-    width: 16px;
-    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-    margin: 0 0 0 -28px;
     padding: 9px 9px 3px 3px;
 
     font-size: 1.72em;
