@@ -95,15 +95,29 @@ body.noScroll {overflow: hidden !important;}
     top: 0;
     right: 0;
 
-    padding: 9px 9px 3px 3px;
+    margin-right: -1px;
+    padding: 6px 6px 26px 26px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
 
     font-size: 1.72em;
-    line-height: 16px;
-    color: #888;
+    line-height: 15px;
+    color: #f0f2f1;
+    background: #999;
     cursor: pointer;
+
+    transition: padding-bottom .5s;
+    -moz-transition: padding-bottom .5s;
+    -webkit-transition: padding-bottom .5s;
 }
 
-.projectIntroContent > span:hover {color: #e00;}
+.projectIntroContent > span:hover {
+    padding-bottom: 50px;
+    transition: padding-bottom .5s;
+    -moz-transition: padding-bottom .5s;
+    -webkit-transition: padding-bottom .5s;
+    color: #e00;
+}
 
 
 @media screen and (max-width: 660px) {
