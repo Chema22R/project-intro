@@ -58,12 +58,9 @@ body.noScroll {overflow: hidden !important;}
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
 }
 
-.projectIntroContent > p {
+.projectIntroContent > div {
     display: none;
     max-width: 600px;
-
-    margin: 0;
-    padding: 25px 30px;
 
     box-sizing: border-box;
     overflow: hidden;
@@ -77,7 +74,20 @@ body.noScroll {overflow: hidden !important;}
     color: #444;
 }
 
-.projectIntroContent > p br {margin-bottom: 5px;}
+.projectIntroContent > div > * {margin: 0;}
+
+.projectIntroContent > div > h2 {
+    padding: 25px 30px 10px 30px;
+    text-align: center;
+}
+
+.projectIntroContent > div > p {padding: 10px 30px 25px 30px;}
+
+.projectIntroContent > div > p br {
+    display: block;
+    margin-bottom: 5px;
+    content: "";
+}
 
 .projectIntroContent > span {
     width: 16px;
