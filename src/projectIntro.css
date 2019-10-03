@@ -65,7 +65,7 @@ body.noScroll {overflow: hidden !important;}
     max-width: 600px;
 
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
 
     cursor: default;

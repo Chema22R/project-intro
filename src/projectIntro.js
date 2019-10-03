@@ -17,13 +17,9 @@ export function init() {
         document.getElementById("projectIntroContent").style.maxWidth = "900px";
     }, 500);
 
-    /*setTimeout(() => {
-        document.getElementById("projectIntroText").style.overflow = "auto";
-    }, 1500);*/
-
     setTimeout(() => {
-        document.getElementById("projectIntroTitle").innerHTML = "";
-        document.getElementById("projectIntroDescr").innerHTML = "";
+        document.getElementById("projectIntroText").style.minWidth = document.getElementById("projectIntroText").offsetWidth + "px";
+        document.getElementById("projectIntroTitle").innerHTML = document.getElementById("projectIntroDescr").innerHTML = "";
         document.getElementById("projectIntroText").style.opacity = "1";
 
         let timer = -textTitlespeed;
@@ -39,7 +35,11 @@ export function init() {
                 document.getElementById("projectIntroDescr").innerHTML += textDescrArray[i] + " ";
             }, timer += textDescrspeed);
         }
-    }, 1500);
+
+        setTimeout(() => {
+            document.getElementById("projectIntroText").style.minWidth = "unset";
+        }, timer);
+    }, 2000);
 }
 
 
