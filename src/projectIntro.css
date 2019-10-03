@@ -61,6 +61,7 @@ body.noScroll {overflow: hidden !important;}
 
 .projectIntroContent > div {
     display: none;
+    opacity: 0;
     max-width: 600px;
 
     box-sizing: border-box;

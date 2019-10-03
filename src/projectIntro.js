@@ -3,6 +3,11 @@
 export function init() {
     document.body.classList.add("noScroll");
 
+    const textTitleArray = document.getElementById("projectIntroTitle").innerHTML.split(/\s/).filter((value) => {return value;});
+    const textDescrArray = document.getElementById("projectIntroDescr").innerHTML.split(/\s/).filter((value) => {return value;});
+    const textTitlespeed = (textTitleArray.length < 10) ? 100 : 1000 / textTitleArray.length;
+    const textDescrspeed = (textDescrArray.length < 100) ? 30 : 3000 / textDescrArray.length;
+
     document.getElementById("projectIntroContainer").style.display = "flex";
     document.getElementById("projectIntroContent").style.maxWidth = document.getElementById("projectIntroImg").offsetWidth + "px";
     document.getElementById("projectIntroText").style.display = "unset";
@@ -12,8 +17,28 @@ export function init() {
         document.getElementById("projectIntroContent").style.maxWidth = "900px";
     }, 500);
 
-    setTimeout(() => {
+    /*setTimeout(() => {
         document.getElementById("projectIntroText").style.overflow = "auto";
+    }, 1500);*/
+
+    setTimeout(() => {
+        document.getElementById("projectIntroTitle").innerHTML = "";
+        document.getElementById("projectIntroDescr").innerHTML = "";
+        document.getElementById("projectIntroText").style.opacity = "1";
+
+        let timer = -textTitlespeed;
+        for (let i=0; i<textTitleArray.length; i++) {
+            setTimeout(() => {
+                document.getElementById("projectIntroTitle").innerHTML += textTitleArray[i] + " ";
+            }, timer += textTitlespeed);
+        }
+
+        timer = -textDescrspeed + ((textTitleArray.length < 10) ? 100 : textTitlespeed) * textTitleArray.length;
+        for (let i=0; i<textDescrArray.length; i++) {
+            setTimeout(() => {
+                document.getElementById("projectIntroDescr").innerHTML += textDescrArray[i] + " ";
+            }, timer += textDescrspeed);
+        }
     }, 1500);
 }
 
