@@ -7,7 +7,7 @@ body.noScroll {overflow: hidden !important;}
     height: 100%;
 
     margin: 0;
-    padding: 30px;
+    padding: 0;
 
     box-sizing: border-box;
     z-index: 999;
@@ -35,6 +35,9 @@ body.noScroll {overflow: hidden !important;}
     display: flex;
     max-height: 350px;
     height: 100%;
+
+    margin: 0;
+    padding: 0;
 
     border-radius: 8px;
     overflow: hidden;

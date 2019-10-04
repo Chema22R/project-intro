@@ -8,13 +8,8 @@ export function init() {
     document.getElementById("projectIntroText").style.display = "unset";
     document.getElementById("projectIntroText").scrollTop = 0;
 
-    setTimeout(() => {
-        document.getElementById("projectIntroContent").style.maxWidth = "900px";
-    }, 500);
-
-    setTimeout(() => {
-        document.getElementById("projectIntroText").style.overflow = "auto";
-    }, 2000);
+    setTimeout(() => document.getElementById("projectIntroContent").style.maxWidth = "900px", 500);
+    setTimeout(() => document.getElementById("projectIntroText").style.overflow = "auto", 1500);
 }
 
 
