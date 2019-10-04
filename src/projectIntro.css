@@ -116,21 +116,29 @@ body.noScroll {overflow: hidden !important;}
 }
 
 
-@media screen and (max-width: 660px) {
+.projectIntroContent.mobile {max-height: 100%;}
+.projectIntroContent.mobile > img,
+.projectIntroContent.mobile > div {max-width: unset;}
+
+
+@media screen and (max-width: 700px) {
     .projectIntroContent > img {
         position: absolute;
+        width: 100%;
         height: unset;
         max-width: 100%;
         opacity: .1;
     }
+    .projectIntroContent.mobile > img {display: none;}
     .projectIntroContent > div,
     .projectIntroContent > span {z-index: 1;}
+    .projectIntroContent > div {max-width: 100%;}
 }
 
 @media screen and (max-width: 300px) {
     .projectIntroContent > img {
-        max-width: unset;
         height: 100%;
+        max-width: unset;
     }
 }
 
