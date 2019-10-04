@@ -117,5 +117,19 @@ body.noScroll {overflow: hidden !important;}
 
 
 @media screen and (max-width: 660px) {
-    .projectIntroContent > img {display: none;}
+    .projectIntroContent > img {
+        position: absolute;
+        height: unset;
+        max-width: 100%;
+        opacity: .1;
+    }
+    .projectIntroContent > div,
+    .projectIntroContent > span {z-index: 1;}
+}
+
+@media screen and (max-width: 300px) {
+    .projectIntroContent > img {
+        max-width: unset;
+        height: 100%;
+    }
 }
