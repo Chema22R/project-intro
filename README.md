@@ -73,6 +73,7 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
 |- LICENSE
 |- package.json
 |- README.md
+|- _config.yml
 |- webpack.config.js
 |- webpack.dev.js
 |- webpack.prod.js
