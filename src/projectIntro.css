@@ -33,8 +33,11 @@ body.noScroll {overflow: hidden !important;}
 .projectIntroContent {
     position: absolute;
     display: flex;
-    max-height: 350px;
     height: 100%;
+    max-height: 350px;
+
+    margin: 0;
+    padding: 0;
 
     margin: 0;
     padding: 0;
@@ -54,8 +57,9 @@ body.noScroll {overflow: hidden !important;}
 }
 
 .projectIntroContent > img {
-    max-width: 300px;
     height: inherit;
+    max-width: 300px;
+    object-fit: cover;
 
     box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
     -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
@@ -116,9 +120,10 @@ body.noScroll {overflow: hidden !important;}
 }
 
 
-.projectIntroContent.mobile {max-height: 100%;}
-.projectIntroContent.mobile > img,
-.projectIntroContent.mobile > div {max-width: unset;}
+.projectIntroContent.mobile {
+    max-width: 100% !important;
+    max-height: 100%;
+}
 
 
 @media screen and (max-width: 900px),
@@ -130,27 +135,20 @@ screen and (max-height: 350px) {
     .projectIntroContent > img {
         position: absolute;
         width: 100%;
-        height: unset;
-        max-width: 100%;
-        opacity: .1;
-    }
-    .projectIntroContent > div {max-width: 100%;}
-    .projectIntroContent > div,
-    .projectIntroContent > span {z-index: 1;}
-}
+        max-width: unset !important;
 
-@media screen and (max-width: 300px) {
-    .projectIntroContent > img {
-        height: 100%;
-        width: unset;
-        max-width: unset;
+        opacity: .1;
+        z-index: -1;
     }
+    .projectIntroContent > div {max-width: unset !important;}
 }
 
 @media screen and (orientation: portrait) {
-    .projectIntroContent.mobile > img {
-        height: 100%;
-        width: unset;
-        max-width: unset;
-    }
+    .projectIntroContent.mobile > img,
+    .projectIntroContent.mobile > div {max-width: 100%;}
+}
+
+@media screen and (orientation: landscape) {
+    .projectIntroContent.mobile > img {max-width: 40%;}
+    .projectIntroContent.mobile > div {max-width: 100%;}
 }
