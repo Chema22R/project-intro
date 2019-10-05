@@ -1,6 +1,6 @@
 "use strict";
 
-const mobileType = navigator.userAgent.match(/Android|BlackBerry|iPhone|iPod|Opera Mini|IEMobile/i) && window.innerHeight < 1100 && window.innerWidth < 1100;
+const mobileType = navigator.userAgent.match(/Android|BlackBerry|iPhone|iPod|Opera Mini|IEMobile/i) && navigator.userAgent.match(/Mobile/i);
 
 export function init() {
     document.body.classList.add("noScroll");
