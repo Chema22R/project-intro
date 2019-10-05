@@ -22,7 +22,7 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
     <div id="projectIntroContainer" class="projectIntroContainer">
         <div class="projectIntroBack" onclick="projectIntro.fadeOut()"></div>
         <div id="projectIntroContent" class="projectIntroContent">
-            <img id="projectIntroImg" src="<IMAGE>" alt="Project Introduction Image">
+            <img id="projectIntroImg" src="<IMAGE>">
             <div id="projectIntroText">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
@@ -46,6 +46,7 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
     projectIntro.init();
     ```
 
+* The provided image will be resized to fit the assigned space, but the perfect size would be 300x350p
 * To implement the module in a non-NPM environment, each project file must be imported individually, as in the example provided in `/development/index.js`. The following code can be used instead of the one specified in step 2, replacing the routes with the correct ones:
     ```js
     import "./projectIntro.css";
@@ -67,11 +68,11 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
     |- index.js
     |- projectIntro.css
     |- projectIntro.js
+|- _config.yml
 |- .gitignore
 |- LICENSE
 |- package.json
 |- README.md
-|- _config.yml
 |- webpack.config.js
 |- webpack.dev.js
 |- webpack.prod.js
