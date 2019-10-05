@@ -1,13 +1,13 @@
 body.noScroll {overflow: hidden !important;}
 
-#projectIntroContainer {
+.projectIntroContainer {
     display: none;
     position: fixed;
     width: 100%;
     height: 100%;
 
     margin: 0;
-    padding: 30px;
+    padding: 0;
 
     box-sizing: border-box;
     z-index: 999;
@@ -21,7 +21,7 @@ body.noScroll {overflow: hidden !important;}
     -webkit-transition: opacity .5s;
 }
 
-#projectIntroBack {
+.projectIntroBack {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -30,10 +30,14 @@ body.noScroll {overflow: hidden !important;}
     opacity: 0.4;
 }
 
-#projectIntroContent {
+.projectIntroContent {
+    position: absolute;
     display: flex;
     max-height: 350px;
     height: 100%;
+
+    margin: 0;
+    padding: 0;
 
     border-radius: 8px;
     overflow: hidden;
@@ -49,7 +53,7 @@ body.noScroll {overflow: hidden !important;}
     -webkit-transition: max-width 1.5s;
 }
 
-#projectIntroImg {
+.projectIntroContent > img {
     max-width: 300px;
     height: inherit;
 
@@ -58,12 +62,9 @@ body.noScroll {overflow: hidden !important;}
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
 }
 
-#projectIntroText {
+.projectIntroContent > div {
     display: none;
     max-width: 600px;
-
-    margin: 0;
-    padding: 25px 30px;
 
     box-sizing: border-box;
     overflow: hidden;
@@ -77,23 +78,79 @@ body.noScroll {overflow: hidden !important;}
     color: #444;
 }
 
-#projectIntroText br {margin-bottom: 5px;}
+.projectIntroContent > div > * {margin: 0;}
 
-@media screen and (max-width: 660px) {
-    #projectIntroImg {display: none;}
+.projectIntroContent > div > h2 {
+    padding: 25px 30px 10px 30px;
+    text-align: center;
 }
 
-#projectIntroExit {
-    width: 16px;
-    height: 16px;
+.projectIntroContent > div > p {padding: 10px 30px 25px 30px;}
 
-    margin: 0 0 0 -28px;
-    padding: 9px 9px 3px 3px;
+.projectIntroContent > div > p br {
+    display: block;
+    margin-bottom: 5px;
+    content: "";
+}
+
+.projectIntroContent > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin-right: -1px;
+    padding: 6px 6px 26px 26px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
 
     font-size: 1.72em;
-    line-height: 16px;
-    color: #888;
+    line-height: 15px;
+    color: #f0f2f1;
+    background: #999;
     cursor: pointer;
 }
 
-#projectIntroExit:hover {color: #e00;}
+.projectIntroContent > span:hover {
+    font-weight: bold;
+    color: #e00;
+}
+
+
+.projectIntroContent.mobile {max-height: 100%;}
+.projectIntroContent.mobile > img,
+.projectIntroContent.mobile > div {max-width: unset;}
+
+
+@media screen and (max-width: 900px),
+screen and (max-height: 350px) {
+    .projectIntroContent {border-radius: unset;}
+}
+
+@media screen and (max-width: 700px) {
+    .projectIntroContent > img {
+        position: absolute;
+        width: 100%;
+        height: unset;
+        max-width: 100%;
+        opacity: .1;
+    }
+    .projectIntroContent > div {max-width: 100%;}
+    .projectIntroContent > div,
+    .projectIntroContent > span {z-index: 1;}
+}
+
+@media screen and (max-width: 300px) {
+    .projectIntroContent > img {
+        height: 100%;
+        width: unset;
+        max-width: unset;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .projectIntroContent.mobile > img {
+        height: 100%;
+        width: unset;
+        max-width: unset;
+    }
+}
