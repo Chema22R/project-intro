@@ -68,11 +68,11 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
     |- index.js
     |- projectIntro.css
     |- projectIntro.js
+|- _config.yml
 |- .gitignore
 |- LICENSE
-|- README.md
-|- _config.yml
 |- package.json
+|- README.md
 |- webpack.config.js
 |- webpack.dev.js
 |- webpack.prod.js
