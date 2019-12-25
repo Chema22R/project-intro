@@ -56,7 +56,7 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
     projectIntro.init();
     ```
 
-## Directories Structure
+## Directory Structure
 ```
 |- /development
     |- example.html
@@ -68,11 +68,11 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
     |- index.js
     |- projectIntro.css
     |- projectIntro.js
-|- _config.yml
 |- .gitignore
 |- LICENSE
-|- package.json
 |- README.md
+|- _config.yml
+|- package.json
 |- webpack.config.js
 |- webpack.dev.js
 |- webpack.prod.js
