@@ -60,6 +60,8 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
 
 ## Directory Structure
 ```
+|- /.github
+    |- ...
 |- /development
     |- example.html
     |- index.js
@@ -73,6 +75,7 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
 |- _config.yml
 |- .gitignore
 |- LICENSE
+|- package-lock.json
 |- package.json
 |- README.md
 |- webpack.config.js
