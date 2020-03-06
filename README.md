@@ -60,6 +60,8 @@ Check out a live demo [here](https://printersdiscovery.chema22r.com/).
 
 ## Directory Structure
 ```
+|- /.dependabot
+    |- ...
 |- /.github
     |- ...
 |- /development
