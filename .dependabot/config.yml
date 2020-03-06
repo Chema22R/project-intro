@@ -1,0 +1,15 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "live"
+    target_branch: "staging"
+    default_reviewers:
+      - "Chema22R"
+    default_assignees:
+      - "Chema22R"
+    default_labels:
+      - "dependencies"
+    allowed_updates:
+      - match:
+         update_type: "security"
