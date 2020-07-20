@@ -59,30 +59,3 @@ Check out a live demo [here](https://3dpreviewer.chema22r.com/).
     window.projectIntro = projectIntro;
     projectIntro.init();
     ```
-
-## Directory Structure
-```
-|- /.dependabot
-    |- ...
-|- /.github
-    |- ...
-|- /development
-    |- example.html
-    |- index.js
-|- /dist
-    |- project-intro.js
-    |- project-intro.js.map
-|- /src
-    |- index.js
-    |- projectIntro.css
-    |- projectIntro.js
-|- _config.yml
-|- .gitignore
-|- LICENSE
-|- package-lock.json
-|- package.json
-|- README.md
-|- webpack.config.js
-|- webpack.dev.js
-|- webpack.prod.js
-```
