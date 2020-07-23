@@ -1,5 +1,5 @@
-import "./projectIntro.css";
-import {init, fadeIn, fadeOut} from "./projectIntro";
+import './projectIntro.css';
+import { init, fadeIn, fadeOut } from './projectIntro';
 
 exports.init = init;
 exports.fadeIn = fadeIn;
