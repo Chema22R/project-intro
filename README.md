@@ -11,14 +11,12 @@ Check out a live demo [here](https://3d-previewer.chema22r.com/).
 
 ![Screenshot](https://i.postimg.cc/435D6GXP/Screen-Shot-2020-03-24-at-16-18-48.png)
 
-## Setup and Run
-1. Download the source code
-2. Install the node modules executing `npm i`
-3. Execute the command `npm run build` to build the application
+## Installation
+```
+npm install project-intro
+```
 
-* To run an example of the module, use the command `npm start` instead of the one specified in step 3
-
-## Code to run the module
+## Code To Run The Module
 1. HTML code:
     ```html
     <div id="projectIntroContainer" class="projectIntroContainer">
@@ -39,7 +37,7 @@ Check out a live demo [here](https://3d-previewer.chema22r.com/).
                     id est laborum.
                 </p>
             </div>
-            <span onclick="projectIntro.fadeOut()">&times;</span>
+            <span onclick="projectIntro.fadeOut()">&#10005;</span>
         </div>
     </div>
     ```
