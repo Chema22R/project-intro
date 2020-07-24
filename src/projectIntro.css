@@ -72,8 +72,6 @@ body.noScroll {overflow: hidden !important;}
     -webkit-overflow-scrolling: touch;
 
     cursor: default;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     text-align: justify;
     white-space: normal;
     line-height: 24px;
@@ -113,6 +111,7 @@ body.noScroll {overflow: hidden !important;}
     clip-path: polygon(0 0, 100% 100%, 100% 0);
     -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
 
+    font-family: none;
     font-size: 18px;
     justify-content: center;
     color: #f0f2f1;
