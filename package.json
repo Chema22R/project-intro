@@ -1,6 +1,6 @@
 {
     "name": "project-intro",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "description": "Simple UI modal to introduce a project",
     "main": "dist/project-intro.js",
     "scripts": {
