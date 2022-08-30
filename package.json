@@ -1,6 +1,6 @@
 {
     "name": "project-intro",
-    "version": "2.2.7",
+    "version": "2.2.8",
     "description": "Simple UI modal to introduce a project",
     "main": "dist/project-intro.js",
     "scripts": {
@@ -28,12 +28,12 @@
     ],
     "devDependencies": {
         "clean-webpack-plugin": "^3.0.0",
-        "css-loader": "^5.2.4",
+        "css-loader": "^5.2.7",
         "html-webpack-plugin": "^5.3.1",
         "style-loader": "^2.0.0",
         "webpack": "^5.37.0",
         "webpack-cli": "^4.7.0",
-        "webpack-dev-server": "^3.11.2",
+        "webpack-dev-server": "^3.11.3",
         "webpack-merge": "^5.7.3"
     }
 }
