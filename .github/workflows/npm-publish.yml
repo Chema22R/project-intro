@@ -1,6 +1,6 @@
-# GitHub action to automatically publish packages to npm and github packages when someone changes
-# the version in package.json to x.x.x and pushes a commit with the message Release x.x.x, the
-# npm-publish action will create a new tag vx.x.x and publish the package to the npm registry.
+# GitHub action to automatically publish packages to npm when someone changes the version
+# in package.json to x.x.x and pushes a commit with the message Release x.x.x, the npm-publish
+# action will create a new tag vx.x.x and publish the package to the npm registry.
 
 name: npm-publish
 on:
@@ -22,7 +22,6 @@ jobs:
       - run: npm run build
 
   npm-publish:
-    name: npm-publish
     needs: build
     runs-on: ubuntu-latest
     steps:
